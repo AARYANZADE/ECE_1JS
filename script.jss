@@ -14,3 +14,9 @@ html>
  <script type = "text/javascript">
  </script>
 </body>
+
+// var myinfo = []; 
+// var myinfo1 = [];
+// console.log(myinfo, myinfo1);
+
+//java script can change all the html elements in the page.
