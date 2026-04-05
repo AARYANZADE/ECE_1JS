@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM & Object Practice</title>
+</head>
+<body>
+
+    <h1 id="Id">Default Text</h1>
+
+    <script type="text/javascript">
+        // 1. The Person Object
+        const person = {
+            fname: "ajay",
+            lname: "singh", // Fixed 'inname' to 'lname' for standard naming
+            age: 25
+        };
+
+        // 2. Logging to Console
+        for (let x in person) {
+            console.log("person details: " + x + " : " + person[x]);
+        }
+
+        // 3. DOM Manipulation on Content Load
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const result = document.getElementById("Id");
+            
+            if (result) {
+                result.innerHTML = `Myself: ${person.fname} ${person.lname}`;
+                result.title = "my name";
+                
+                // Extra: Applying a style change to prove JS can change HTML elements
+                result.style.color = "blue";
+            }
+        });
+    </script>
+
+</body>
+</html>
