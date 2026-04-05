@@ -20,3 +20,9 @@ html>
 // console.log(myinfo, myinfo1);
 
 //java script can change all the html elements in the page.
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    const result = document.getElementById("Id");
+    result.innerHTML = "my self";
+    result.title = "my name";
+});
